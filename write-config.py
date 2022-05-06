@@ -8,7 +8,7 @@ config = json.load(open("config.template.json"))
 deploy_env = os.environ.get("NODE_ENV", "production")
 
 config["server"]["port"] = int(os.environ["PORT"])
-config["database"]["connection"]["url"] = os.environ["JAWSDB_URL"]
+config["database"]["connection"] = os.environ["JAWSDB_URL"]
 config["paths"]["contentPath"] = os.environ["GHOST_CONTENT"]
 
 print(config)
