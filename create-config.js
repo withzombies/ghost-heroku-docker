@@ -78,5 +78,3 @@ function getMysqlConfig(connectionUrl) {
 var configContents = JSON.stringify(createConfig(), null, 2);
 fs.writeFileSync(path.join(appRoot, 'config.production.json'), configContents);
 
-
-require('current/index.js')
