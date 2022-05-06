@@ -21,7 +21,13 @@
   },
   "database": {
     "client": "mysql",
-    "connection": "idk",
+    "connection": {
+        "host"     : "127.0.0.1",
+        "user"     : "root",
+        "password" : "",
+        "database" : "ghost_testing"
+
+    },
     "pool": {
       "min": 0,
       "max": 5
