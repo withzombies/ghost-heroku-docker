@@ -5,7 +5,7 @@ RUN apk update && apk add curl
 WORKDIR $GHOST_INSTALL
 COPY create-config.js create-config.js
 
-RUN su-exec node ghost config --ip '0.0.0.0' --port $PORT --no-prompt --db mysql 
-RUN ls -l
+COPY run.sh run.sh
+RUN chmod +x run.sh
 
 CMD ["node", "current/index.js"]
