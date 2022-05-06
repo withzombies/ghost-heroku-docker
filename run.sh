@@ -10,4 +10,4 @@ nohup node current/index.js &
 sleep 15
 netstat -antp
 
-nc -vvv localhost $PORT
+curl -D - http://localhost:$PORT
