@@ -1,13 +1,8 @@
 setup:
   addons:
-    - plan: jawsdb
-      as: DATABASE
+    - plan: jawsdb-mysql
+      as: JAWSDB
 
 build:
   docker:
     ghost: Dockerfile
-
-release:
-  image: ghost
-  command:
-    - set
