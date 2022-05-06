@@ -14,7 +14,4 @@ release:
     - ./write-config.py
 
 run:
-  image: 
-    image: ghost
-    command:
-      - node current/index.js
+  ghost: node current/index.js
