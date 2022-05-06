@@ -11,7 +11,7 @@ function createConfig() {
   config = {
     url: process.env.PUBLIC_URL || "https://withzombies-blog.herokuapp.com/",
     logging: {
-      level: "debug",
+      level: "info",
       transports: ["stdout"]
     },
     mail: {
