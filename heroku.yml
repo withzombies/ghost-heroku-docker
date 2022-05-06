@@ -11,4 +11,4 @@ build:
 release:
   image: ghost
   command:
-    - set; ls; uname -a; cat config.production.json
+    - ./test.sh
