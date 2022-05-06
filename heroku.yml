@@ -14,3 +14,4 @@ release:
     - set
     - ls
     - uname -a
+    - cat config.production.json
