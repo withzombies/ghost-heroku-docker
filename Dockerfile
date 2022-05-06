@@ -8,6 +8,4 @@ COPY create-config.js create-config.js
 COPY run.sh run.sh
 RUN chmod +x run.sh
 
-RUN cp -r content.orig/* content/
-
 CMD ./run.sh
