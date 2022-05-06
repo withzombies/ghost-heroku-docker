@@ -1,0 +1,37 @@
+{
+  "logging": {
+    "level": "info",
+    "transports": [
+      "stdout"
+    ]
+  },
+  "mail": {
+    "transport": "SMTP",
+    "options": {
+      "service": "Mailgun",
+      "auth": {
+          "user": "user",
+          "pass": "pass"
+      }
+    }
+  },
+  "fileStorage": true,
+  "storage": {
+
+  },
+  "database": {
+    "client": "mysql",
+    "connection": "idk",
+    "pool": {
+      "min": 0,
+      "max": 5
+    },
+    "debug": false
+  },
+  "server": {
+    "host": "0.0.0.0"
+  },
+  "paths": {
+    "contentPath": "/var/lib/ghost/content"
+  }
+}
