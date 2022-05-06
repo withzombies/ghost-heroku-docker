@@ -35,7 +35,7 @@ function createConfig() {
     },
     server: {
       host: '0.0.0.0',
-      port: process.env.PORT
+      port: parseInt(process.env.PORT)
     },
     paths: {
       contentPath: process.env.GHOST_CONTENT
@@ -67,7 +67,7 @@ function getMysqlConfig(connectionUrl) {
 
   var dbConnection = {
     host: dbConfig.hostname,
-    port: dbConfig.port || '3306',
+    port: parseInt(dbConfig.port || '3306'),
     user: dbUser,
     password: dbPassword,
     database: dbName
