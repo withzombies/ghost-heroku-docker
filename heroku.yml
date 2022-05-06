@@ -6,3 +6,11 @@ setup:
 build:
   docker:
     ghost: Dockerfile
+
+
+release:
+  image: ghost
+  command:
+    - set
+    - ls
+    - uname -a
