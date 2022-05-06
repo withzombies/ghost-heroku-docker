@@ -1,0 +1,15 @@
+{
+  "name": "ghost-heroku-docker",
+  "description": "ghost packaged as a heroku app",
+  "repository": "https://github.com/withzombies/ghost-heroku-docker",
+  "logo": "https://cdn.rawgit.com/TryGhost/Ghost-Admin/61fe83dff375a145d5272a5382aa2c72bd994830/public/assets/img/large.png",
+  "keywords": ["ghost", "docker", "blog"],
+  "stack": "container",
+  "success_url": "/ghost",
+  "env": {
+    "PUBLIC_URL": {
+      "description": "The HTTPS URL of this app: either your custom domain or default 'herokuapp.com' hostname.",
+      "value": "https://YOURAPPNAME.herokuapp.com"
+    }
+  }
+}

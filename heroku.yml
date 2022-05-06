@@ -1,0 +1,13 @@
+setup:
+  addons:
+    - plan: jawsdb
+      as: DATABASE
+
+build:
+  docker:
+    ghost: Dockerfile
+
+release:
+  image: ghost
+  command:
+    - set
