@@ -5,7 +5,7 @@ var fs = require('fs');
 var path = require('path');
 var url = require('url');
 
-var appRoot = process.env.GHOST_CONTENT
+var appRoot = process.env.GHOST_INSTALL
 
 function createConfig() {
   config = {
