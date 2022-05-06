@@ -11,4 +11,4 @@ build:
 release:
   image: ghost
   command:
-    - ./write_config.py
+    - ./write-config.py
