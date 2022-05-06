@@ -12,3 +12,6 @@ release:
   image: ghost
   command:
     - ./write-config.py
+
+run:
+  image: ghost
