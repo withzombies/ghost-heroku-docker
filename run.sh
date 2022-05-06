@@ -6,5 +6,6 @@ set -v
 
 node create-config.js
 export DEBUG=ghost:*,ghost-config
-yarn --cwd current/ run knex-migrator init --mgpath current/
+cp current/MigratorConfig.js .
+yarn --cwd current/ run knex-migrator init --mgpath .
 node current/index.js
