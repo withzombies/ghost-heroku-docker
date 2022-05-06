@@ -6,6 +6,10 @@
   "keywords": ["ghost", "docker", "blog"],
   "stack": "container",
   "success_url": "/ghost",
+  "addons": [
+    "jawsdb",
+    "mailgun"
+  ],
   "env": {
     "PUBLIC_URL": {
       "description": "The HTTPS URL of this app: either your custom domain or default 'herokuapp.com' hostname.",
