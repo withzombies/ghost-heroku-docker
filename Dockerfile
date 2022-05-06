@@ -9,5 +9,6 @@ COPY run.sh run.sh
 RUN chmod +x run.sh
 
 RUN cp -r content.orig/* content/
+RUN ls -l content/
 
 CMD ./run.sh
