@@ -16,3 +16,5 @@ release:
 run:
   image: 
     image: ghost
+    command:
+      - node current/index.js
