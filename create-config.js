@@ -9,7 +9,7 @@ var appRoot = process.env.GHOST_INSTALL
 
 function createConfig() {
   config = {
-    url: process.env.PUBLIC_URL || "https://https://withzombies-blog.herokuapp.com/",
+    url: process.env.PUBLIC_URL || "https://withzombies-blog.herokuapp.com/",
     logging: {
       level: "info",
       transports: ["stdout"]
