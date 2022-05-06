@@ -5,6 +5,6 @@ set -x
 set -v
 
 node create-config.js
-node current/index.js &
+nohup node current/index.js &
+sleep 15
 netstat -antp
-fg
