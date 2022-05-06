@@ -7,10 +7,5 @@ build:
   docker:
     ghost: Dockerfile
 
-release:
-  image: ghost
-  command:
-    - ./write-config.py
-
 run:
-  ghost: node current/index.js
+  ghost: node create-config.js
