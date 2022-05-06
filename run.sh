@@ -10,4 +10,4 @@ nohup node current/index.js &
 sleep 15
 netstat -antp
 
-curl -D - http://localhost:$PORT
+curl -D - -H "X-Forwarded-Proto: https" http://localhost:$PORT
