@@ -7,7 +7,7 @@ setup:
 
 build:
   docker:
-    ghost: Dockerfile
+    web: Dockerfile
 
 run:
-  ghost: ./run.sh
+  web: ./run.sh
